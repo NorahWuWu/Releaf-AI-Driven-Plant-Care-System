@@ -52,7 +52,7 @@ Listen here:
 - React with Vite
 - React Router
 - Firebase Authentication and Firestore
-- Spline 3D integration
+
 
 **Backend & Machine Learning**
 - Node.js + Express
