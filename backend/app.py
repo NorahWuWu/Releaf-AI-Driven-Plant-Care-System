@@ -5,12 +5,11 @@ import requests
 app = Flask(__name__)
 CORS(app)
 
-API_KEY = "2b10PfiK3MxZOuzWCqY4YWutBu"  # 替换为你自己的 PlantNet API Key
-
+API_KEY = "2b10PfiK3MxZOuzWCqY4YWutBu" 
 @app.route('/identify', methods=['POST'])
 def identify():
     try:
-        data = request.get_json(force=True)  # ✅ 接收 JSON 格式
+        data = request.get_json(force=True)  
         image_base64 = data.get("image")
         organ = data.get("organ", "leaf")
 
